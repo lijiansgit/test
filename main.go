@@ -13,6 +13,8 @@ import (
 )
 
 func main() {
+	log.Println("uid:", os.Geteuid())
+	log.Println("gid:", os.Getgid())
 	log.Println("ENV TEST:", os.Getenv("TEST"))
 	log.Println("APP_ENV:", os.Getenv("APP_ENV"))
 	log.Println("runtime.NumCPU():", runtime.NumCPU())
