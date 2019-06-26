@@ -2,7 +2,7 @@ CURRENT_DIR=$(shell pwd)
 
 common:
 
-	go get -v github.com/valyala/fasthttp
+	#go get -v github.com/valyala/fasthttp
 	go build -o test
 
 prd: common
